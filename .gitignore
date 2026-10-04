@@ -47,3 +47,10 @@ coverage/
 **/outputs/
 **/logs/
 **/backups/
+
+# Robotech ships audited AOS assets (MIT); these are runtime files.
+!robotech/vendor/
+robotech/vendor/*
+!robotech/vendor/aos.css
+!robotech/vendor/aos.js
+!robotech/vendor/LICENSE-aos.txt
