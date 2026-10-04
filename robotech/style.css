@@ -593,3 +593,12 @@ background: var(--bg-secondary);
         font-size: 2.5rem;
     }
 }
+/* Faux liens de démonstration (non cliquables) */
+.footer-section .footer-link { display: block; color: var(--text-muted); margin-bottom: 0.5rem; }
+.footer-bottom a { color: inherit; text-decoration: underline; }
+.btn-primary:disabled, .btn-secondary:disabled { cursor: default; }
+a:focus-visible, button:focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}

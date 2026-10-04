@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RoboTech - L'Avenir de l'Intelligence</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta name="description" content="Démonstration visuelle : vitrine fictive d'une montre connectée haut de gamme.">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" integrity="sha384-/rJKQnzOkEo+daG0jMjU1IwwY9unxt1NBw3Ef2fmOJ3PW/TfAg2KXVoWwMZQZtw9" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,9 +15,6 @@
         <div data-aos="fade-down" data-aos-duration="1500" class="logo">ROBOTECH</div>
         <div class="nav-links">
             <a data-aos="fade-down" data-aos-duration="1700" href="#home">Accueil</a>
-            <a data-aos="fade-down" data-aos-duration="1900" href="#features">Fonctionnalités</a>
-            <a data-aos="fade-down" data-aos-duration="2100" href="#tech">Technologie</a>
-            <a data-aos="fade-down" data-aos-duration="2300" href="#contact">Contact</a>
         </div>
         <button data-aos="fade-down" data-aos-duration="2500" class="btn-primary">Découvrir</button>
     </div>
@@ -36,14 +34,14 @@
                 Une fusion parfaite entre design futuriste et technologie avancée.
             </p>
             <div class="hero-buttons"  >
-                <button class="btn-primary large">Commencer</button>
-                <button class="btn-secondary large">En Savoir Plus</button>
+                <button type="button" class="btn-primary large" disabled>Commencer</button>
+                <button type="button" class="btn-secondary large" disabled>En Savoir Plus</button>
             </div>
         </div>
 
         <div class="robot-container"  >
-            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.4/build/spline-viewer.js"></script>
-            <spline-viewer url="https://prod.spline.design/VZyctkfisasAU1j5/scene.splinecode"></spline-viewer>
+            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.4/build/spline-viewer.js" integrity="sha384-deDYY6zvRCOleCKvmKqj7PHYzWKxrmdhLhnC6w+haJwGD4y4lxbShmb5u14fhE5U" crossorigin="anonymous"></script>
+            <spline-viewer aria-label="Scène 3D décorative d'un robot" url="https://prod.spline.design/VZyctkfisasAU1j5/scene.splinecode"></spline-viewer>
         </div>
     </div>
 
@@ -92,44 +90,29 @@
         </div>
         <div class="footer-section">
             <h4>Liens Rapides</h4>
-            <a href="#">À Propos</a>
-            <a href="#">Carrières</a>
-            <a href="#">Blog</a>
+            <span class="footer-link" aria-disabled="true">À Propos</span>
+            <span class="footer-link" aria-disabled="true">Carrières</span>
+            <span class="footer-link" aria-disabled="true">Blog</span>
         </div>
         <div class="footer-section">
             <h4>Support</h4>
-            <a href="#">Documentation</a>
-            <a href="#">API</a>
-            <a href="#">Contact</a>
+            <span class="footer-link" aria-disabled="true">Documentation</span>
+            <span class="footer-link" aria-disabled="true">API</span>
+            <span class="footer-link" aria-disabled="true">Contact</span>
         </div>
         <div class="footer-section">
             <h4>Suivez-nous</h4>
-            <a href="#">Twitter</a>
-            <a href="#">LinkedIn</a>
-            <a href="#">GitHub</a>
+            <span class="footer-link" aria-disabled="true">Twitter</span>
+            <span class="footer-link" aria-disabled="true">LinkedIn</span>
+            <span class="footer-link" aria-disabled="true">GitHub</span>
         </div>
     </div>
     <div class="footer-bottom">
-        <p>&copy; 2024 RoboTech. Tous droits réservés.</p>
+        <p>Démonstration visuelle : produit fictif, aucune donnée n'est envoyée. <a href="../mentions-legales.html">Mentions légales</a> · <a href="../confidentialite.html">Confidentialité</a></p>
     </div>
 </footer>
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init({
-        duration: 1000,
-        easing: 'ease-out-cubic',
-        once: true,
-        mirror: false,
-        offset: 100,
-        delay: 50,
-        anchorPlacement: 'top-bottom'
-    });
-
-    // Refresh AOS on scroll for better performance
-    window.addEventListener('load', () => {
-        AOS.refresh();
-    });
-</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js" integrity="sha384-wziAfh6b/qT+3LrqebF9WeK4+J5sehS6FA10J1t3a866kJ/fvU5UwofWnQyzLtwu" crossorigin="anonymous"></script>
+<script src="init.js"></script>
 </body>
 </html>
