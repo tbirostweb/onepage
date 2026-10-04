@@ -18,7 +18,7 @@ done
 [ "$(curl -s -o /dev/null -w '%{http_code}' $B/inconnu)" = 404 ] || fail "404 attendu"
 for u in / /robotech/ /brf/ /nope; do
   h=$(curl -si $B$u)
-  for k in x-content-type-options x-frame-options referrer-policy permissions-policy content-security-policy-report-only; do
+  for k in x-content-type-options x-frame-options referrer-policy permissions-policy content-security-policy; do
     echo "$h" | grep -qi "^$k:" || fail "header $k absent sur $u"
   done
 done
@@ -29,6 +29,10 @@ echo "$h" | grep -qi '^cache-control: max-age=2592000' || fail "cache-control as
 [ "$(echo "$h" | grep -ci '^cache-control:')" = 1 ] || fail "Cache-Control duplique"
 # redirection sans slash: pas de port interne
 loc=$(curl -si $B/brf | grep -i '^location:'); echo "$loc" | grep -q ':8080' && fail "redirect absolu"
+# aucune ressource tierce (src/href/url()/@import absolus) dans les pages et CSS servis
+for f in / /robotech/ /brf/ /flyhigh/ /tract/ /mentions-legales.html /confidentialite.html /gallery.css /fonts.css /robotech/style.css /robotech/fonts.css; do
+  curl -s $B$f | grep -oE '(src|href)="https?://[^"]*"|url\(["'"'"']?https?://[^)]*|@import[^;]*https?://' | grep -v 'birostweb.fr\|cnil.fr' && fail "ressource tierce dans $f"
+done
 # non-root
 u=$(docker exec $NAME id -u); [ "$u" != 0 ] || fail "execute en root"
 docker exec $NAME sh -c 'find /usr/share/nginx/html -name "*.map" -o -name ".env*" | grep .' && fail "map/.env dans l'image"

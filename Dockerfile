@@ -18,7 +18,8 @@ RUN set -e; \
       (cd "$d" && npm ci && npm run build -- --base=./); \
     done; \
     mkdir -p /site; \
-    cp index.html gallery.css mentions-legales.html confidentialite.html legal.css /site/; \
+    cp index.html gallery.css fonts.css mentions-legales.html confidentialite.html legal.css /site/; \
+    cp -r fonts /site/fonts; \
     cp -r brf/dist     /site/brf; \
     cp -r flyhigh/dist /site/flyhigh; \
     cp -r tract/dist   /site/tract; \
