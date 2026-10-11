@@ -26,8 +26,8 @@
   </div>
 
   <div class="grid grid-cols-3 gap-4 mt-6 p-4">
-    <div class="h-80 col-span-2 rounded-xl bg-green-400">1</div>
-    <div class="h-80 rounded-xl bg-fuchsia-400">2</div>
+    <img class="h-80 w-full col-span-2 rounded-xl object-cover bg-green-400" src="https://placehold.co/800x320/4ade80/14532d?text=Project+Dashboard" alt="Aperçu tableau de bord (démonstration)">
+    <img class="h-80 w-full rounded-xl object-cover bg-fuchsia-400" src="https://placehold.co/400x320/e879f9/4a044e?text=Team" alt="Aperçu équipe (démonstration)">
   </div>
 
   <div class="grid grid-cols-5 gap-4 p-4 mt-6 text-4xl font-semibold place-items-center">

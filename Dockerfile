@@ -17,6 +17,8 @@ RUN set -e; \
     done; \
     mkdir -p /site; \
     cp index.html /site/index.html; \
+    cp gallery.css fonts.css legal.css mentions-legales.html confidentialite.html /site/; \
+    cp -r fonts /site/fonts; \
     cp -r brf/dist     /site/brf; \
     cp -r flyhigh/dist /site/flyhigh; \
     cp -r tract/dist   /site/tract; \
