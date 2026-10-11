@@ -166,16 +166,11 @@ h1 .accent { color: var(--accent); }
 
 .card .thumb {
   height: 128px;
+  width: 100%;
+  object-fit: cover;
   border-radius: var(--radius);
   margin-bottom: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: 'IBM Plex Sans Condensed', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  letter-spacing: 0.02em;
-  color: #fff;
+  display: block;
 }
 
 .card .head {
@@ -216,12 +211,6 @@ h1 .accent { color: var(--accent); }
 }
 .card .cta .arrow { transition: transform .2s; }
 .card:hover .cta .arrow { transform: translateX(5px); }
-
-/* thumb palettes — sober, brand-adjacent */
-.t-brf     { background: #1f6b3a; }
-.t-flyhigh { background: #1a5fa8; }
-.t-robotech{ background: #5a2a8c; }
-.t-tract   { background: #f0451e; }
 
 /* ---------- FOOTER ---------- */
 footer {

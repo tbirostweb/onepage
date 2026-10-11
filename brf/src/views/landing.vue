@@ -13,12 +13,12 @@
 
 <div>
       <div class="grid grid-cols-2 grid-rows-3 gap-8 px-6">
-        <div class="row-span-3 border-2 rounded-xl flex items-center justify-center text-gray-400" role="img" aria-label="Visuel du produit (emplacement de démonstration)">Visuel</div>
+        <img class="row-span-3 border-2 rounded-xl w-full h-full object-cover" src="https://placehold.co/600x800?text=Reebok+Zig+Kinecta+3" alt="Visuel du produit (démonstration)">
         <div class="row-span-3 pl-12">
 
           <div class="flex flex-row justify-between items-center mb-4">
             <div class="flex flex-row gap-3 items-center">
-              <div class="w-10 h-10 rounded-full bg-black" aria-hidden="true"></div>
+              <img class="w-10 h-10 rounded-full object-cover" src="https://placehold.co/80x80/000000/ffffff?text=R" alt="Logo marque (démonstration)">
               <h2 class="font-semibold text-lg">Reebook</h2>
             </div>
               <p class="text-gray-400 text-sm">HR1325R00-.-8</p>
@@ -43,9 +43,9 @@
           </div>
 
           <div class="flex flex-row gap-3  mb-4">
-            <div class="rounded-lg border w-16 h-24 bg-gray-100" aria-hidden="true"></div>
-            <div class="rounded-lg border w-16 h-24 bg-gray-100" aria-hidden="true"></div>
-            <div class="rounded-lg border w-16 h-24 bg-gray-100" aria-hidden="true"></div>
+            <img class="rounded-lg border w-16 h-24 object-cover bg-gray-100" src="https://placehold.co/64x96?text=White" alt="Coloris White (démonstration)">
+            <img class="rounded-lg border w-16 h-24 object-cover bg-gray-100" src="https://placehold.co/64x96?text=Black" alt="Coloris Black (démonstration)">
+            <img class="rounded-lg border w-16 h-24 object-cover bg-gray-100" src="https://placehold.co/64x96?text=Blue" alt="Coloris Blue (démonstration)">
           </div>
 
           <div class="flex flex-row gap-2 text-gray-400 mb-2 text-base">
@@ -97,10 +97,10 @@
         <div class="grid grid-cols-4 grid-rows-1 mt-8 p-6 gap-4">
     <div class="col-span-2">
       <div class=" flex flex-row gap-4">
-        <div class="w-28 h-28 rounded-lg border border-gray-300 bg-gray-100" aria-hidden="true"></div>
-        <div class="w-28 h-28 rounded-lg border border-gray-300 bg-gray-100" aria-hidden="true"></div>
-        <div class="w-28 h-28 rounded-lg border border-gray-300 bg-gray-100" aria-hidden="true"></div>
-        <div class="w-28 h-28 rounded-lg border border-gray-300 bg-gray-100" aria-hidden="true"></div>
+        <img class="w-28 h-28 rounded-lg border border-gray-300 object-cover bg-gray-100" src="https://placehold.co/112x112?text=1" alt="Miniature produit 1 (démonstration)">
+        <img class="w-28 h-28 rounded-lg border border-gray-300 object-cover bg-gray-100" src="https://placehold.co/112x112?text=2" alt="Miniature produit 2 (démonstration)">
+        <img class="w-28 h-28 rounded-lg border border-gray-300 object-cover bg-gray-100" src="https://placehold.co/112x112?text=3" alt="Miniature produit 3 (démonstration)">
+        <img class="w-28 h-28 rounded-lg border border-gray-300 object-cover bg-gray-100" src="https://placehold.co/112x112?text=4" alt="Miniature produit 4 (démonstration)">
         <div class="text-black font-medium w-28 h-28 rounded-lg border border-gray-300 flex items-center justify-center ">
           +4 more
         </div>
